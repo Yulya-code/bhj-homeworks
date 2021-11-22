@@ -1,12 +1,14 @@
 const holeIndex = function getHole (index) {
-return document.getElementsById(`hole${index}`);
+document.getElementsById(`hole${index}`);
 }
 
-const deadMoleCounter = function() {
-    const deadCounter = document.getElementById("dead");
-    if (getHole(index).className = 'hole hole_has-mole') {
-        deadCounter.textContent += 1;
+const dead = document.getElementById("dead");
+const lost = document.getElementById("lost");
+
+function countDeadMole() { 
+  hole.className.includes('hole_has-mole') ? dead.textContent +=1 : lost.textContent +=1;
 }
-}
+
+holeIndex.onclick = countDeadMole;
 
 
