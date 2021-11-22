@@ -1,6 +1,6 @@
 const cookie = document.getElementById("cookie");
 function changeSize(){
-    cookie.width = 300;
+  cookie.width="200" ? cookie.width="300" : cookie.width="200";
 }
 cookie.onclick = changeSize;
 
